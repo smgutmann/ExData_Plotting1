@@ -1,3 +1,13 @@
+# Plot2.R 
+#
+# JHU Data Science Course on Coursera - Exploratory Data Analysis
+# Week 1 Assignment
+#
+# Dataset used for this assignment was downloaded from 
+# https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+# and unzipped in a directory named ./data
+#
+
 library(dplyr)
 library(lubridate)
 
