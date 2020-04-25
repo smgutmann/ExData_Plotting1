@@ -30,7 +30,7 @@ png(filename = "Plot2.png")
 with(workData, {
         plot(DateTime, Global_active_power, 
              xlab = "", 
-             ylab = "Global active power (kilowatts)", 
+             ylab = "Global Active Power (kilowatts)", 
              type = "l")
 })
 

@@ -28,12 +28,12 @@ workData$DateTime <- strptime(workData$DateTime, format = "%Y-%m-%d %H:%M:%S")
 
 png(filename = "Plot4.png")
 
-par(mfrow = c(2,2))
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 2))
 
 with(workData, {
         plot(DateTime, Global_active_power, 
              xlab = "", 
-             ylab = "Global active power (kilowatts)", 
+             ylab = "Global Active Power (kilowatts)", 
              type = "l")
         
         plot(DateTime, Voltage, 
@@ -46,7 +46,7 @@ with(workData, {
         lines(workData$DateTime, workData$Sub_metering_2, col = "red", type = "l")
         lines(workData$DateTime, workData$Sub_metering_3, col = "blue", type = "l")
         legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
-               col = c("black", "red", "blue"), lty = 1:1)
+               col = c("black", "red", "blue"), lty = 1, bty = "n")
         
         plot(DateTime, Global_reactive_power, 
              type = "l")

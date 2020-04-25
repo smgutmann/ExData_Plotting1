@@ -25,7 +25,7 @@ workData <- filter(allData, Date == "2007-02-01" | Date == "2007-02-02")
 
 png(filename = "Plot1.png")
 hist(as.numeric(workData$Global_active_power), col = "red", main = "Global Active Power",
-xlab = "Global active Power (kilowatts)",
+xlab = "Global Active Power (kilowatts)",
 ylab = "Frequency")
 dev.off()
 
